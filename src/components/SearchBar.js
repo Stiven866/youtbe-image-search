@@ -8,6 +8,8 @@ import {
   NavLink,
 } from 'reactstrap';
 
+import { Globe } from 'react-feather';
+ 
 //Components
 import Error from './Error';
 
@@ -98,7 +100,7 @@ const SearchBar = ({ search }) => {
 
     return (
         <Navbar className="navbar-expand-lg navbar-dark bg-dark">
-            <NavLink className="navbar-brand" href="#">Navbar</NavLink>
+            <NavLink className="navbar-brand" href="#"><Globe/></NavLink>
             <NavbarToggler onClick={() => setIsOpen(!isOpen)} />
 
             <Collapse isOpen={isOpen} navbar>
@@ -116,7 +118,7 @@ const SearchBar = ({ search }) => {
                         <Link name="register" onClick={setDecoration} className="nav-link" to="/Register">Registro</Link>
                     </NavItem>
                     <NavItem active={login}>
-                        <Link name="login" onClick={setDecoration} className="nav-link" to="/Login">Inicisar Sesión</Link>
+                        <Link name="login" onClick={setDecoration} className="nav-link" to="/Login">Iniciar Sesión</Link>
                     </NavItem>
                     
                 </Nav>
